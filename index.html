@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynasty Tracker | CoachOKST56Dynasty</title>
+<meta name="description" content="Track the Missouri Tigers CFB 27 dynasty, from the roster to season history.">
+<link rel="stylesheet" href="style.css"><script defer src="data.js"></script><script defer src="site.js"></script>
+</head>
+<body>
+<header class="bar"><div class="wrap mast"><a class="brand" href="./">CoachOKST56<span>Dynasty</span></a><nav aria-label="Main navigation"><a aria-current="page" href="./">Dynasty Tracker</a><a href="press.html">Zou Prairie Press</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-inner"><div><p class="eyebrow">CFB 27 DYNASTY TRACKER</p><h1>Missouri<br><em>Tigers</em></h1><p class="intro">Follow the roster, results, and recruiting trail from season to season.</p></div><div class="mark" aria-hidden="true">M</div></div></section>
+<div class="wrap content">
+<div class="toolbar"><label>Season <select id="season"></select></label><nav aria-label="Tracker sections"><a href="#schedule">Schedule</a><a href="#roster">Roster</a><a href="#stats">Stats</a><a href="#recruiting">Recruiting</a><a href="#history">History</a></nav></div>
+<div class="grid scoreboard"><section><p class="eyebrow">LATEST RESULT</p><p id="latest"></p></section><section><p class="eyebrow">NEXT MATCHUP</p><p id="next"></p></section></div>
+<section id="schedule"><h2>Schedule &amp; results</h2><div id="games"></div></section>
+<section id="roster"><h2>Roster</h2><div class="toolbar"><label>Find a player <input type="search" id="search" placeholder="Name or position"></label><label>Unit <select id="unit"><option value="">All units</option></select></label></div><p id="count" aria-live="polite"></p><div id="players"></div></section>
+<div class="grid"><section id="stats"><h2>Stats</h2><div id="stat-data"></div></section><section id="recruiting"><h2>Recruiting</h2><div id="recruits"></div></section></div>
+<section id="history"><h2>Season history</h2><div id="archives"></div></section>
+</div></main>
+<footer><div class="wrap">CoachOKST56Dynasty · Missouri CFB 27</div></footer>
+</body></html>
