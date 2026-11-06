@@ -108,7 +108,7 @@ function setupPress() {
   const label = node('p', 'FEATURED STORY');
   label.className = 'eyebrow';
   const title = node('h2', '');
-  title.append(link('#' + encodeURIComponent(featured.id), featured.title));
+  title.append(link(featured.url ?? '#' + encodeURIComponent(featured.id), featured.title));
   feature.append(label, title, node('p', featured.summary));
   press.append(feature, node('h2', 'Article archive'));
 
@@ -120,7 +120,12 @@ function setupPress() {
       article.id = story.id;
       article.className = 'story';
       const heading = node('h4', '');
-      heading.append(link('#' + encodeURIComponent(story.id), story.title));
+      heading.append(link(story.url ?? '#' + encodeURIComponent(story.id), story.title));
+      if (story.url) {
+        article.append(node('p', story.edition || story.date), heading, node('p', story.summary));
+        section.append(article);
+        continue;
+      }
       const date = node('time', story.date);
       date.dateTime = story.date;
       article.append(date, heading, ...story.paragraphs.map(paragraph => node('p', paragraph)));

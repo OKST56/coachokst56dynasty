@@ -831,5 +831,16 @@ const dynasty = {
     }
   ],
   "history": [],
-  "articles": []
+  "articles": [
+    {
+      "id": "a-new-paper-an-old-cowboy",
+      "title": "A New Paper, an Old Cowboy, and a Football Program Worth Writing About",
+      "date": "",
+      "season": "Season 22",
+      "summary": "After 21 seasons of SFA football, The Zou Prairie Press opens its doors in Columbia. Its newest columnist has a few things to say, and not all of them will be particularly pleasant.",
+      "edition": "Inaugural Edition",
+      "featured": true,
+      "url": "a-new-paper-an-old-cowboy.html"
+    }
+  ]
 };
