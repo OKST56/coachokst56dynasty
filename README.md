@@ -10,7 +10,7 @@ Edit data.js. Keep the season ID unique and put the newest season first. The imp
 - **Stats** use stat, subject, and value.
 - **Recruits** use name, position, stars, and status.
 - **History** uses season, record, and finish.
-- **Articles** use a unique URL-safe id, title, date in YYYY-MM-DD format, season label, summary, and paragraphs (an array of strings). Set featured to true to pin the story on the press page. An article ID of season-opener links as press.html#season-opener.
+- **Articles** live in standalone HTML files. Add each story to the season archive in press.html with its title, summary, and link. Use the archive entry ID as the matching game recap reference.
 
 ## Hosting
 
